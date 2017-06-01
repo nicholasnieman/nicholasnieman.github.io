@@ -3,40 +3,42 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>About | Nicholas Nieman</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" media="screen and (max-width: 980px)" href="max980.css">
-    <link rel="stylesheet" type="text/css" media="screen and (max-width: 670px)" href="max670.css">
+    <title> The Portfolio of Nicholas Nieman</title>
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Monoton" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <a id="logo" href="index.html">Nicholas Nieman</a>
-            <nav>
-                <a href="index.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </div>
-    </header>
-    <div id="main-container" class="container">
-        <section id="main-section">
-            <h1>About Me</h1>
-            <img src="bio-image.jpeg" id="bio-image">
-            <p id="bio-description">Some people call me the space cowboy, Yeah! Some call me the gangster of love. Some people say I look like "that guy from White Men Can't Jump", but I'm just a developer from Florida.</p>
-            <p id="bio-description">I have a background in Marketing, a passion for Entrepreneurship, and I take pride in my work. Feel free to check out some of my previous <a href="portfolio.html">projects</a> and please, <a href="contact.html">reach out</a> to me if you are interested in working together. Let's make something great happen! </p>
-        </section>
-        <section id="sidebar">
-            <h2>Connect With Me</h2>
-            <a href="#"><img class="social" src="github-128.png" /></a>
-            <a href="#"><img class="social" src="linkedin-128.png" /></a>
-            <a href="#"><img class="social" src="stackoverflow-128.png" /></a>
-        </section>
+    <div class="layer" id="l1"></div>
+
+    <div class="layer" id="l2"></div>
+
+    <div class="layer" id="l3"></div>
+
+    <div class="layer" id="l4">
+        <img src="astronaut.png" id="astronaut">
     </div>
-    <footer>
-        <div>Copyright &copy; 2017 Nicholas Nieman</div>
-    </footer>
+    <div class="layer" id="l5">
+        <div id="container">
+            <h1>
+				welcome to the portfolio of 
+				<br>
+				<span id="name">Nicholas Nieman</span>
+			</h1>
+            
+           <img src="scroll-down.gif" id="arrow">
+        </div>
+        <div id="group">
+            <h1>About Me</h1>
+            <div class="info-box">
+                <p>Some people call me the space cowboy, Yeah! Some call me the master of web. Some people say I look like "that guy from White Men Can't Jump", but I'm just a developer from Florida.</p>
+                <p>I have a passion for modern web development, a background in Marketing, and I take pride in my work. Feel free to check out some of my previous projects and please, reach out to me if you are interested in working together. Let's make something great happen! </p>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="logic.js"></script>
 </body>
+
+</html>

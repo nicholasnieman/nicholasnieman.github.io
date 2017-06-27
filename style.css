@@ -25,12 +25,6 @@ h1 {
     font-size: 1.5em;
 }
 
-#name {
-    font-size: 2em;
-    color: #ee402f;
-    font-family: 'Monoton', cursive;
-}
-
 .layer {
     width: 100%;
     height: 400%;
@@ -43,7 +37,7 @@ h1 {
     opacity: .8;
     border-radius: 25px;
     font-weight: 700;
-    padding: 20px;
+    padding: 1em;
     display: block;
 }
 
@@ -59,6 +53,12 @@ h1 {
     background: url('space2.gif');
 }
 
+#name {
+    font-size: 2em;
+    color: #ee402f;
+    font-family: 'Monoton', cursive;
+}
+
 #container {
     max-width: 960px;
     margin: 6% auto;
@@ -68,6 +68,17 @@ h1 {
     width: 40%;
     margin: 0 auto;
     text-transform: uppercase;
+}
+
+#bio-image {
+    width: 60%;
+    opacity: 1;
+    border-radius: 25px;
+}
+
+#bio-description {
+    text-align: justify;
+    margin:.5em .5em;
 }
 
 #arrow {
@@ -81,8 +92,8 @@ h1 {
 }
 
 #group {
-    margin-left: 50%;
+    margin-left: 48%;
     margin-top: 30%;
-    width: 40%;
+    width: 50%;
 }
 

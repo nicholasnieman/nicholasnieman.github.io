@@ -1,7 +1,7 @@
-var layer1 = document.getElementById("l1");
-var layer2 = document.getElementById("l2");
-var layer3 = document.getElementById("l3");
-var layer4 = document.getElementById("l4");
+var layer1 = document.getElementById("l1"),
+	layer2 = document.getElementById("l2"),
+	layer3 = document.getElementById("l3"),
+	layer4 = document.getElementById("l4");
 
 function initParallax() {
     layer1.style.top = (window.pageYOffset / 1.5) + "px";

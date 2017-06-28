@@ -10,15 +10,21 @@ body {
 
 body {
     font-family: "Calibri", "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
 }
 
 h1 {
     color: #ffffff;
     font-family: 'Baloo Chettan', cursive;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     font-size: 2em;
+}
+
+td {
+    width: 25%;
+    padding: 15px;
+    text-align: left;
 }
 
 .directions {
@@ -36,9 +42,31 @@ h1 {
     background-color: #ffffff;
     opacity: .8;
     border-radius: 25px;
-    font-weight: 700;
+    font-weight: 600;
     padding: 1em;
     display: block;
+}
+
+.icon {
+    margin-right: 15px;
+}
+
+.clearfix:after {
+   content: "";
+   display: block;
+   clear: both;
+}
+
+.glyphicon-circle-arrow-down {
+    margin-right: 5px;
+}
+
+.in-view {
+    -ms-transform: translateX(-1200px);
+    -webkit-transform: translateX(-1200px); 
+    transform: translateX(-1200px);
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear;
 }
 
 #l1 {
@@ -60,7 +88,7 @@ h1 {
 }
 
 #container {
-    max-width: 960px;
+    max-width: 980px;
     margin: 6% auto;
 }
 
@@ -70,15 +98,26 @@ h1 {
     text-transform: uppercase;
 }
 
+#bio {
+    margin: 600px auto 0 1200px;
+    width: 100%;
+}
+
 #bio-image {
-    width: 60%;
-    opacity: 1;
+    width: 200px;
     border-radius: 25px;
+    float: left;
+    margin-right: 15px;
 }
 
 #bio-description {
     text-align: justify;
-    margin:.5em .5em;
+}
+
+#directions {
+    color: #ee402f;
+    margin-top: 50px;
+    font-size: 18px;
 }
 
 #arrow {
@@ -87,13 +126,19 @@ h1 {
 
 #astronaut {
     width: 300px;
-    margin-left: 70%;
+    margin-left: 50%;
     margin-top: 20%;
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
 }
 
-#group {
-    margin-left: 48%;
-    margin-top: 30%;
-    width: 50%;
+#rocket {
+    margin:500px auto 0 auto;
+    width: 350px;
 }
 
+#dev-tools {
+}

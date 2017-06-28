@@ -4,40 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <title> The Portfolio of Nicholas Nieman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Monoton" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="layer" id="l1"></div>
-
     <div class="layer" id="l2"></div>
-
     <div class="layer" id="l3"></div>
-
     <div class="layer" id="l4">
         <img src="astronaut.png" id="astronaut">
     </div>
-    <div class="layer" id="l5">
+    <div class="layer">
         <div id="container">
             <h1>
-				welcome to the portfolio of 
-				<br>
-				<span id="name">Nicholas Nieman</span>
-			</h1>
-            
-           <img src="scroll-down.gif" id="arrow">
-        </div>
-        <div id="group">
-            <h1>About Me</h1>
-            <div class="info-box">
-                <img src="bio-image2.jpg" id="bio-image">
-                <p id="bio-description">Hi, I'm Nick, a problem solver who likes to get creative. I have a background in Marketing, a passion for modern web development, and I take pride in my work. Feel free to check out some of my previous projects and please, reach out to me if you are interested in working together. Continue scrolling down for an OUT OF THIS WORLD experience...</p>
+                welcome to the portfolio of 
+                <br>
+                <span id="name">Nicholas Nieman</span>
+            </h1>
+            <img src="scroll-down.gif" id="arrow">
+            <div id="bio">
+                <h1>About Me</h1>
+                <div class="info-box clearfix">
+                    <img src="bio-image.jpg" id="bio-image">
+                    <p id="bio-description">Hi, I'm Nick, a problem solver who likes to get creative. I have a background in Marketing, a passion for modern web development, and I take pride in my work. Feel free to check out some of my previous projects and please, reach out to me if you are interested in working together. Let's make something great happen!</p>
+                    <p id="directions"><span class="glyphicon glyphicon-circle-arrow-down"></span>Continue scrolling down for an OUT OF THIS WORLD experience...</p>
+                </div>
+            </div>
+            <img src="rocket.gif" id="rocket">
+            <div id="dev-tools">
+                <h1>Development Tools</h1>
+                <div class="info-box">
+                    <table>
+                        <tr>
+                            <td><span class=" icon glyphicon glyphicon-ok"></span>Javascript/Node.js</td>
+                            <td><span class="icon glyphicon glyphicon-ok"></span>CSS3</td>
+                            <td><span class="icon glyphicon glyphicon-ok"></span>Html5</td>
+                            <td><span class="icon glyphicon glyphicon-ok"></span>jQuery</td>
+                        </tr>
+                        <tr>
+                            <td><span class=" icon glyphicon glyphicon-ok"></span>Express</td>
+                            <td><span class="icon glyphicon glyphicon-ok"></span>ejs</td>
+                            <td><span class="icon glyphicon glyphicon-ok"></span>Bootstrap</td>
+                            <td><span class="icon glyphicon glyphicon-ok"></span>Semantic UI</td>
+                        </tr>
+                        <tr>
+                            <td><span class=" icon glyphicon glyphicon-ok"></span>NPM</td>
+                            <td><span class="icon glyphicon glyphicon-ok"></span>Git</td>
+                            <td><span class="icon glyphicon glyphicon-ok"></span>mongoDB</td>
+                            <td><span class="icon glyphicon glyphicon-ok"></span>Sublime Text 3</td>
+                        </tr>
+                        <tr>
+                            <td><span class=" icon glyphicon glyphicon-ok"></span>Cloud 9</td>
+                            <td><span class="icon glyphicon glyphicon-ok"></span>Photoshop</td>
+                            <td><span class="icon glyphicon glyphicon-ok"></span>Ajax</td>
+                            <td><span class="icon glyphicon glyphicon-ok"></span>Heroku</td>
+                        </tr>
+                    </table>
+                    <p id="directions"><span class="glyphicon glyphicon-circle-arrow-down"></span>Continue scrolling down to check out some of the projects that I've built...</p>
+                </div>
             </div>
         </div>
     </div>
-    
     <script type="text/javascript" src="logic.js"></script>
 </body>
 

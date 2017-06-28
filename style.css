@@ -5,7 +5,6 @@
 html,
 body {
     min-height: 100%;
-    line-height: 1.2;
 }
 
 body {
@@ -14,10 +13,9 @@ body {
     text-align: center;
 }
 
-h1 {
+h2 {
     color: #ffffff;
     font-family: 'Baloo Chettan', cursive;
-    margin-bottom: 2%;
     font-size: 2em;
 }
 
@@ -25,10 +23,6 @@ td {
     width: 25%;
     padding: 15px;
     text-align: left;
-}
-
-.directions {
-    font-size: 1.5em;
 }
 
 .layer {
@@ -40,33 +34,61 @@ td {
 .info-box {
     line-height: 30px;
     background-color: #ffffff;
-    opacity: .8;
     border-radius: 25px;
     font-weight: 600;
-    padding: 1em;
+    padding: 20px;
     display: block;
 }
 
+.directions {
+    color: #ee402f;
+    margin-top: 50px;
+    font-size: 18px;
+}
+
 .icon {
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 .clearfix:after {
-   content: "";
-   display: block;
-   clear: both;
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .glyphicon-circle-arrow-down {
     margin-right: 5px;
 }
 
-.in-view {
-    -ms-transform: translateX(-1200px);
-    -webkit-transform: translateX(-1200px); 
-    transform: translateX(-1200px);
-    -webkit-transition: all 1s linear;
-    transition: all 1s linear;
+.slide-left {
+    position: relative;
+    animation: slide-left .8s linear forwards;
+}
+.slide-right {
+    position: relative;
+    animation: slide-right .8s linear forwards;
+}
+
+@keyframes slide-left {
+    from {
+        left: 1200px;
+        opacity: 0
+    }
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
+
+@keyframes slide-right {
+    from {
+        right: 1200px;
+        opacity: 0
+    }
+    to {
+        right: 0;
+        opacity: 1
+    }
 }
 
 #l1 {
@@ -82,14 +104,14 @@ td {
 }
 
 #name {
-    font-size: 2em;
+    font-size: 4em;
     color: #ee402f;
     font-family: 'Monoton', cursive;
 }
 
 #container {
     max-width: 980px;
-    margin: 6% auto;
+    margin: 0 auto;
 }
 
 #sign {
@@ -99,46 +121,66 @@ td {
 }
 
 #bio {
-    margin: 600px auto 0 1200px;
-    width: 100%;
+    margin: 550px auto 0 auto;
+    width: 980px;
+    opacity: 0;
+}
+#welcome {
+    margin-top: 100px;
 }
 
 #bio-image {
     width: 200px;
     border-radius: 25px;
     float: left;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 #bio-description {
     text-align: justify;
 }
 
-#directions {
-    color: #ee402f;
-    margin-top: 50px;
+#arrow-container {
+    height: 300px;
+    margin: 0 auto;
+}
+#arrow-directions {
+    color: #ffffff;
     font-size: 18px;
 }
 
 #arrow {
-    opacity: .8;
+    font-size: 150px;
+    color: #f47835;
+    animation: arrow 2s ease-in-out .8s infinite;
+}
+
+@keyframes arrow {
+    from {
+        margin-top: 0;
+    }
+    to {
+        margin-top: 100px;
+    }
 }
 
 #astronaut {
     width: 300px;
-    margin-left: 50%;
-    margin-top: 20%;
     -moz-transform: scale(-1, 1);
     -webkit-transform: scale(-1, 1);
     -o-transform: scale(-1, 1);
     -ms-transform: scale(-1, 1);
     transform: scale(-1, 1);
+    margin-top: 250px;
+    margin-left: 600px;
 }
 
 #rocket {
-    margin:500px auto 0 auto;
+    margin: 500px auto 0 auto;
     width: 350px;
 }
 
 #dev-tools {
+    width: 980px;
+    opacity: 0;
 }

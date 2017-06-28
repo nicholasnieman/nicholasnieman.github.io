@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <title> The Portfolio of Nicholas Nieman</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Monoton" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="Bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Monoton">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -16,55 +16,58 @@
     <div class="layer" id="l2"></div>
     <div class="layer" id="l3"></div>
     <div class="layer" id="l4">
-        <img src="astronaut.png" id="astronaut">
+        <div class="container">
+            <img src="astronaut.png" id="astronaut" class="slide-left">
+        </div>
     </div>
     <div class="layer">
         <div id="container">
-            <h1>
-                welcome to the portfolio of 
-                <br>
-                <span id="name">Nicholas Nieman</span>
-            </h1>
-            <img src="scroll-down.gif" id="arrow">
+            <h2 id="welcome" class="slide-right">welcome to the portfolio of </h2>
+            <h1 id="name" class="slide-left">Nicholas Nieman</h1>
+            <!-- <img src="scroll-down.gif" id="arrow"> -->
+            <div id=arrow-container class="slide-right">
+                <p id="arrow-directions">Scroll down for an OUT OF THIS WORLD experience!</p>
+                <i class="fa fa-long-arrow-down" id="arrow"></i>
+            </div>
             <div id="bio">
-                <h1>About Me</h1>
+                <h2>About Me</h2>
                 <div class="info-box clearfix">
                     <img src="bio-image.jpg" id="bio-image">
                     <p id="bio-description">Hi, I'm Nick, a problem solver who likes to get creative. I have a background in Marketing, a passion for modern web development, and I take pride in my work. Feel free to check out some of my previous projects and please, reach out to me if you are interested in working together. Let's make something great happen!</p>
-                    <p id="directions"><span class="glyphicon glyphicon-circle-arrow-down"></span>Continue scrolling down for an OUT OF THIS WORLD experience...</p>
+                    <p class="directions"><i class=" icon fa fa-arrow-circle-down"></i>Continue scrolling down...</p>
                 </div>
             </div>
             <img src="rocket.gif" id="rocket">
             <div id="dev-tools">
-                <h1>Development Tools</h1>
+                <h2>Development Tools</h2>
                 <div class="info-box">
                     <table>
                         <tr>
-                            <td><span class=" icon glyphicon glyphicon-ok"></span>Javascript/Node.js</td>
-                            <td><span class="icon glyphicon glyphicon-ok"></span>CSS3</td>
-                            <td><span class="icon glyphicon glyphicon-ok"></span>Html5</td>
-                            <td><span class="icon glyphicon glyphicon-ok"></span>jQuery</td>
+                            <td><i class="icon fa fa-check"></i>Javascript/Node.js</td>
+                            <td><i class="icon fa fa-check"></i>CSS3</td>
+                            <td><i class="icon fa fa-check"></i>Html5</td>
+                            <td><i class="icon fa fa-check"></i>jQuery</td>
                         </tr>
                         <tr>
-                            <td><span class=" icon glyphicon glyphicon-ok"></span>Express</td>
-                            <td><span class="icon glyphicon glyphicon-ok"></span>ejs</td>
-                            <td><span class="icon glyphicon glyphicon-ok"></span>Bootstrap</td>
-                            <td><span class="icon glyphicon glyphicon-ok"></span>Semantic UI</td>
+                            <td><i class="icon fa fa-check"></i></span>Express</td>
+                            <td><i class="icon fa fa-check"></i></span>ejs</td>
+                            <td><i class="icon fa fa-check"></i></span>Bootstrap</td>
+                            <td><i class="icon fa fa-check"></i></span>Semantic UI</td>
                         </tr>
                         <tr>
-                            <td><span class=" icon glyphicon glyphicon-ok"></span>NPM</td>
-                            <td><span class="icon glyphicon glyphicon-ok"></span>Git</td>
-                            <td><span class="icon glyphicon glyphicon-ok"></span>mongoDB</td>
-                            <td><span class="icon glyphicon glyphicon-ok"></span>Sublime Text 3</td>
+                            <td><i class="icon fa fa-check"></i></span>NPM</td>
+                            <td><i class="icon fa fa-check"></i></span>Git</td>
+                            <td><i class="icon fa fa-check"></i></span>mongoDB</td>
+                            <td><i class="icon fa fa-check"></i></span>Sublime Text 3</td>
                         </tr>
                         <tr>
-                            <td><span class=" icon glyphicon glyphicon-ok"></span>Cloud 9</td>
-                            <td><span class="icon glyphicon glyphicon-ok"></span>Photoshop</td>
-                            <td><span class="icon glyphicon glyphicon-ok"></span>Ajax</td>
-                            <td><span class="icon glyphicon glyphicon-ok"></span>Heroku</td>
+                            <td><i class="icon fa fa-check"></i></span>Cloud 9</td>
+                            <td><i class="icon fa fa-check"></i></span>Photoshop</td>
+                            <td><i class="icon fa fa-check"></i></span>Ajax</td>
+                            <td><i class="icon fa fa-check"></i></span>Heroku</td>
                         </tr>
                     </table>
-                    <p id="directions"><span class="glyphicon glyphicon-circle-arrow-down"></span>Continue scrolling down to check out some of the projects that I've built...</p>
+                    <p class="directions"><i class=" icon fa fa-arrow-circle-down"></i>Continue scrolling down...</p>
                 </div>
             </div>
         </div>

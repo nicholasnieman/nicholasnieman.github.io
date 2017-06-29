@@ -74,7 +74,6 @@ p.directions {
 .project {
     opacity: 1;
     position: relative;
-    cursor: pointer;
 }
 
 .project:hover {
@@ -88,6 +87,7 @@ p.directions {
     width: 450px;
     border-radius: 25px;
     border: 3px solid #ddd;
+    cursor: pointer;
 }
 
 .glyphicon-circle-arrow-down {

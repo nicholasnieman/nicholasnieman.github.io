@@ -29,7 +29,7 @@ td {
 
 .layer {
     width: 100%;
-    height: 400%;
+    height: 500%;
     position: absolute;
 }
 
@@ -40,6 +40,19 @@ td {
     font-weight: 600;
     padding: 20px;
     display: block;
+    margin-top: 10px;
+}
+
+.container {
+    max-width: 980px;
+    height: 100%;
+    margin: 0 auto;
+    clear: both;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 p.directions {
@@ -56,6 +69,25 @@ p.directions {
     content: "";
     display: block;
     clear: both;
+}
+
+.project {
+    opacity: 1;
+    position: relative;
+    cursor: pointer;
+}
+
+.project:hover {
+    opacity: .8;
+}
+
+.project:nth-child(even) {
+}
+
+.thumbnail {
+    width: 450px;
+    border-radius: 25px;
+    border: 3px solid #ddd;
 }
 
 .glyphicon-circle-arrow-down {
@@ -97,22 +129,18 @@ p.directions {
 }
 
 #l2 {
-    background: url("space1.png");
+    background: url("../images/space1.png");
 }
 
 #l3 {
-    background: url("space2.png");
+    background: url("../images/space2.png");
+    height: 700%;
 }
 
 #name {
     font-size: 4em;
     color: #ee402f;
     font-family: 'Monoton', cursive;
-}
-
-.container {
-    max-width: 980px;
-    margin: 0 auto;
 }
 
 #sign {
@@ -136,6 +164,7 @@ p.directions {
     border-radius: 25px;
     float: left;
     margin-right: 20px;
+    border: 3px solid #ddd;
 }
 
 #bio-description {
@@ -176,12 +205,13 @@ p.directions {
 
 #rocket {
     margin: 300px auto 0 auto;
+    width: 250px;
 }
 
 #dev-tools {
     width: 980px;
     visibility: hidden;
-    margin-top: 200px;
+    margin-top: 400px;
 }
 
 #tool-display {
@@ -189,5 +219,14 @@ p.directions {
 }
 
 #ufo {
-    margin-top: 200px;
+    margin-top: 400px;
+}
+
+#portfolio {
+    margin-top: 400px;
+    visibility: hidden;
+}
+
+#x-wing {
+    margin-top: 400px;
 }

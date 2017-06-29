@@ -5,6 +5,7 @@ var layer1    = document.getElementById("l1"),
 	astronaut = document.getElementById("astronaut"),
 	bio 	  = document.getElementById("bio"),
 	devTools  = document.getElementById("dev-tools"),
+	portfolio = document.getElementById("portfolio"),
 	slideLeft = "slide-left";
 	
 function initScrollEffects() {
@@ -14,6 +15,7 @@ function initScrollEffects() {
     spaceFloat();
     inView(bio, slideLeft);
     inView(devTools, slideLeft);
+    inView(portfolio, slideLeft);
 }
 
 function parallax(layer, speed) {

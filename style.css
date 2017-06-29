@@ -11,6 +11,8 @@ body {
     font-family: "Calibri", "Helvetica Neue", Helvetica, sans-serif;
     font-size: 20px;
     text-align: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 h2 {
@@ -40,9 +42,9 @@ td {
     display: block;
 }
 
-.directions {
+p.directions {
     color: #ee402f;
-    margin-top: 50px;
+    margin: 50px auto 0 auto;
     font-size: 18px;
 }
 
@@ -62,8 +64,9 @@ td {
 
 .slide-left {
     position: relative;
-    animation: slide-left .8s linear forwards;
+    animation: slide-left .6s linear forwards;
 }
+
 .slide-right {
     position: relative;
     animation: slide-right .8s linear forwards;
@@ -71,23 +74,21 @@ td {
 
 @keyframes slide-left {
     from {
-        left: 1200px;
-        opacity: 0
+        left: 800px;
+        visibility: hidden;
     }
     to {
         left: 0;
-        opacity: 1
+        visibility: visible;
     }
 }
 
 @keyframes slide-right {
     from {
-        right: 1200px;
-        opacity: 0
+        right: 800px;
     }
     to {
         right: 0;
-        opacity: 1
     }
 }
 
@@ -96,11 +97,11 @@ td {
 }
 
 #l2 {
-    background: url('space1.gif');
+    background: url("space1.png");
 }
 
 #l3 {
-    background: url('space2.gif');
+    background: url("space2.png");
 }
 
 #name {
@@ -109,7 +110,7 @@ td {
     font-family: 'Monoton', cursive;
 }
 
-#container {
+.container {
     max-width: 980px;
     margin: 0 auto;
 }
@@ -121,10 +122,11 @@ td {
 }
 
 #bio {
-    margin: 550px auto 0 auto;
+    margin: 620px auto 0 auto;
     width: 980px;
-    opacity: 0;
+    visibility: hidden;
 }
+
 #welcome {
     margin-top: 100px;
 }
@@ -141,9 +143,10 @@ td {
 }
 
 #arrow-container {
-    height: 300px;
+    height: 250px;
     margin: 0 auto;
 }
+
 #arrow-directions {
     color: #ffffff;
     font-size: 18px;
@@ -160,27 +163,31 @@ td {
         margin-top: 0;
     }
     to {
-        margin-top: 100px;
+        margin-top: 50px;
     }
 }
 
 #astronaut {
+    position: relative;
     width: 300px;
-    -moz-transform: scale(-1, 1);
-    -webkit-transform: scale(-1, 1);
-    -o-transform: scale(-1, 1);
-    -ms-transform: scale(-1, 1);
-    transform: scale(-1, 1);
     margin-top: 250px;
     margin-left: 600px;
 }
 
 #rocket {
-    margin: 500px auto 0 auto;
-    width: 350px;
+    margin: 300px auto 0 auto;
 }
 
 #dev-tools {
     width: 980px;
-    opacity: 0;
+    visibility: hidden;
+    margin-top: 200px;
+}
+
+#tool-display {
+    margin: 0 auto;
+}
+
+#ufo {
+    margin-top: 200px;
 }

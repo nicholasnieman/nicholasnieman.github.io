@@ -4,15 +4,16 @@ var layer1    = document.getElementById("l1"),
 	layer4 	  = document.getElementById("l4"),
 	astronaut = document.getElementById("astronaut"),
 	bio 	  = document.getElementById("bio"),
-	devTools  = document.getElementById("dev-tools");
+	devTools  = document.getElementById("dev-tools"),
+	slideLeft = "slide-left";
 	
 function initScrollEffects() {
    	parallax(layer1, 1.5);
    	parallax(layer2, 1.5);
    	parallax(layer3, 2);
     spaceFloat();
-    slideIn(bio);
-    slideIn(devTools);
+    inView(bio, slideLeft);
+    inView(devTools, slideLeft);
 }
 
 function parallax(layer, speed) {
@@ -25,11 +26,11 @@ function spaceFloat() {
     astronaut.style.width = (1800 - pageYOffset)/6 +"px";
 }
 
-function slideIn(element) {
+function inView(element, cssClass) {
 	var windowBottom = window.innerHeight + window.pageYOffset;
-	var elementBottom = element.clientHeight + element.offsetTop;
-	if ((windowBottom >= elementBottom)&&(element.classList.contains("slide-left") === false)){
-		element.className += "slide-left";
+	var triggerOn = element.offsetTop + 200;
+	if ((windowBottom >= triggerOn)&&(element.classList.contains(cssClass) === false)){
+		element.className += cssClass;
 	}
 }
 

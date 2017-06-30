@@ -5,8 +5,13 @@ var layer1    = document.getElementById("l1"),
 	astronaut = document.getElementById("astronaut"),
 	bio 	  = document.getElementById("bio"),
 	devTools  = document.getElementById("dev-tools"),
-	portfolio = document.getElementById("portfolio"),
-	slideLeft = "slide-left";
+	xwing     = document.getElementById("x-wing"),
+	ufo       = document.getElementById("ufo"),
+	rocket    = document.getElementById("rocket"),
+	slideLeft = "slide-left",
+	xwingFly  = "x-wing-fly",
+	rocketFly  = "rocket-fly",
+	ufoFly    = "ufo-fly";
 	
 function initScrollEffects() {
    	parallax(layer1, 1.5);
@@ -15,7 +20,9 @@ function initScrollEffects() {
     spaceFloat();
     inView(bio, slideLeft);
     inView(devTools, slideLeft);
-    inView(portfolio, slideLeft);
+    inView(xwing, xwingFly);
+    inView(ufo, ufoFly);
+    inView(rocket, rocketFly);
 }
 
 function parallax(layer, speed) {

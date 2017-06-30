@@ -27,6 +27,12 @@ td {
     text-align: left;
 }
 
+p.directions {
+    color: #ee402f;
+    margin: 50px auto 0 auto;
+    font-size: 18px;
+}
+
 .layer {
     width: 100%;
     height: 500%;
@@ -55,12 +61,6 @@ td {
     flex-wrap: wrap;
 }
 
-p.directions {
-    color: #ee402f;
-    margin: 50px auto 0 auto;
-    font-size: 18px;
-}
-
 .icon {
     margin-right: 10px;
 }
@@ -74,14 +74,14 @@ p.directions {
 .project {
     opacity: 1;
     position: relative;
+    margin: 10px;
 }
 
 .project:hover {
     opacity: .8;
 }
 
-.project:nth-child(even) {
-}
+.project:nth-child(even) {}
 
 .thumbnail {
     width: 450px;
@@ -104,24 +104,18 @@ p.directions {
     animation: slide-right .8s linear forwards;
 }
 
-@keyframes slide-left {
-    from {
-        left: 800px;
-        visibility: hidden;
-    }
-    to {
-        left: 0;
-        visibility: visible;
-    }
+.x-wing-fly {
+    position: relative;
+    animation: x-wing 2s cubic-bezier(0, 0, 0.41, 1) forwards;
 }
 
-@keyframes slide-right {
-    from {
-        right: 800px;
-    }
-    to {
-        right: 0;
-    }
+.ufo-fly {
+    position: relative;
+    animation: ufo-fly 2s cubic-bezier(0, 1.54, 1, -0.18) forwards;
+}
+
+.rocket-fly {
+    animation: rocket-fly 1s cubic-bezier(0.63, 0.03, 1, 1) forwards;
 }
 
 #l1 {
@@ -187,6 +181,60 @@ p.directions {
     animation: arrow 2s ease-in-out .8s infinite;
 }
 
+#astronaut {
+    position: relative;
+    width: 300px;
+    margin-top: 250px;
+    margin-left: 600px;
+}
+
+#rocket {
+    margin-top: 800px;
+    width: 250px;
+}
+
+#dev-tools {
+    margin-top: 300px;
+    visibility: hidden;
+}
+
+#tool-display {
+    margin: 0 auto;
+}
+
+#ufo {
+    margin-top: 400px;
+    visibility: hidden;
+    width: 800;
+}
+
+#portfolio {}
+
+#x-wing {
+    margin-top: 200px;
+    visibility: hidden;
+}
+
+@keyframes slide-left {
+    from {
+        left: 800px;
+        visibility: hidden;
+    }
+    to {
+        left: 0;
+        visibility: visible;
+    }
+}
+
+@keyframes slide-right {
+    from {
+        right: 800px;
+    }
+    to {
+        right: 0;
+    }
+}
+
 @keyframes arrow {
     from {
         margin-top: 0;
@@ -196,37 +244,39 @@ p.directions {
     }
 }
 
-#astronaut {
-    position: relative;
-    width: 300px;
-    margin-top: 250px;
-    margin-left: 600px;
+@keyframes rocket-fly {
+    from {
+        margin-top: 800px;
+        visibility: visible;
+    }
+    to {
+        margin-top: 0;
+        visibility: hidden;
+    }
 }
 
-#rocket {
-    margin: 300px auto 0 auto;
-    width: 250px;
+@keyframes ufo-fly {
+    from {
+        right: -900px;
+        visibility: hidden;
+        width: 50px
+    }
+    to {
+        right: 1100px;
+        visibility: visible;
+        width: 800px;
+    }
 }
 
-#dev-tools {
-    width: 980px;
-    visibility: hidden;
-    margin-top: 400px;
-}
-
-#tool-display {
-    margin: 0 auto;
-}
-
-#ufo {
-    margin-top: 400px;
-}
-
-#portfolio {
-    margin-top: 400px;
-    visibility: hidden;
-}
-
-#x-wing {
-    margin-top: 400px;
+@keyframes x-wing {
+    from {
+        left: -900px;
+        visibility: hidden;
+        width: 50px
+    }
+    to {
+        left: 1100px;
+        visibility: visible;
+        width: 800px;
+    }
 }

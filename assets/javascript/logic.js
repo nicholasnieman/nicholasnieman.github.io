@@ -1,17 +1,20 @@
-var layer1    = document.getElementById("l1"),
-	layer2    = document.getElementById("l2"),
-	layer3    = document.getElementById("l3"),
-	layer4 	  = document.getElementById("l4"),
-	astronaut = document.getElementById("astronaut"),
-	bio 	  = document.getElementById("bio"),
-	devTools  = document.getElementById("dev-tools"),
-	xwing     = document.getElementById("x-wing"),
-	ufo       = document.getElementById("ufo"),
-	rocket    = document.getElementById("rocket"),
-	slideLeft = "slide-left",
-	xwingFly  = "x-wing-fly",
-	rocketFly  = "rocket-fly",
-	ufoFly    = "ufo-fly";
+var layer1         = document.getElementById("l1"),
+	layer2         = document.getElementById("l2"),
+	layer3         = document.getElementById("l3"),
+	layer4 	       = document.getElementById("l4"),
+	astronaut      = document.getElementById("astronaut"),
+	bio 	       = document.getElementById("bio"),
+	devTools       = document.getElementById("dev-tools"),
+	xwing          = document.getElementById("x-wing"),
+	starfighter    = document.getElementById("starfighter"),
+	ufo            = document.getElementById("ufo"),
+	rocket         = document.getElementById("rocket"),
+	contact        = document.getElementById("contact"),
+	slideLeft      = "slide-left",
+	xwingFly       = "x-wing-fly",
+	starfighterFly = "starfighter-fly",
+	rocketFly      = "rocket-blast",
+	ufoFly         = "ufo-fly";
 	
 function initScrollEffects() {
    	parallax(layer1, 1.5);
@@ -21,8 +24,10 @@ function initScrollEffects() {
     inView(bio, slideLeft);
     inView(devTools, slideLeft);
     inView(xwing, xwingFly);
+    inView(starfighter, starfighterFly);
     inView(ufo, ufoFly);
     inView(rocket, rocketFly);
+    inView(contact, slideLeft);
 }
 
 function parallax(layer, speed) {

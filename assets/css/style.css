@@ -120,7 +120,7 @@ p.directions {
 
 .x-wing-fly {
     position: relative;
-    animation: x-wing 1.5s linear .8s forwards;
+    animation: x-wing 1.5s linear forwards;
 }
 
 .ufo-fly {
@@ -159,7 +159,7 @@ p.directions {
 
 #bio {
     margin: 620px auto 0 auto;
-    width: 980px;
+    max-width: 980px;
     visibility: hidden;
 }
 
@@ -230,7 +230,6 @@ p.directions {
 
 #x-wing {
     visibility: hidden;
-    margin-top: 200px;
 }
 
 #shooting-star {
@@ -242,7 +241,7 @@ p.directions {
 
 #contact {
     visibility: hidden;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
 #contact-1 {

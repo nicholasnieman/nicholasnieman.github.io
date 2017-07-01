@@ -6,13 +6,13 @@ var layer1         = document.getElementById("l1"),
 	bio 	       = document.getElementById("bio"),
 	devTools       = document.getElementById("dev-tools"),
 	xwing          = document.getElementById("x-wing"),
-	starfighter    = document.getElementById("starfighter"),
+	tieFighter    = document.getElementById("tie-fighter"),
 	ufo            = document.getElementById("ufo"),
 	rocket         = document.getElementById("rocket"),
 	contact        = document.getElementById("contact"),
 	slideLeft      = "slide-left",
 	xwingFly       = "x-wing-fly",
-	starfighterFly = "starfighter-fly",
+	tieFighterFly = "tie-fighter-fly",
 	rocketFly      = "rocket-blast",
 	ufoFly         = "ufo-fly";
 	
@@ -24,7 +24,7 @@ function initScrollEffects() {
     inView(bio, slideLeft);
     inView(devTools, slideLeft);
     inView(xwing, xwingFly);
-    inView(starfighter, starfighterFly);
+    inView(tieFighter, tieFighterFly);
     inView(ufo, ufoFly);
     inView(rocket, rocketFly);
     inView(contact, slideLeft);

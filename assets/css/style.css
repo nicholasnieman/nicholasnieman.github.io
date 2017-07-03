@@ -449,6 +449,10 @@ h3 {
     #name {
         font-size: 3em;
     }
+    #scrollbar {
+        display: none;
+    }
+
     #astronaut {
         margin-top: 325px;
         margin-left: 400px;

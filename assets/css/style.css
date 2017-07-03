@@ -283,7 +283,7 @@ p.directions {
 }
 
 #copyright {
-    color: #ee402f;
+    color: #ffffff;
     font-size: .9em;
 }
 
@@ -565,6 +565,9 @@ p.directions {
 @media only screen and (max-width: 540px) {
     footer h2 {
         font-size: .75em;
+    }
+    .info-box {
+        font-size: .9em;
     }
     #shooting-star {
         top: 80px;

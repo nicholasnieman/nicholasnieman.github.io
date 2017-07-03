@@ -5,14 +5,25 @@
 html,
 body {
     min-height: 100%;
+    font-size: 20px;
 }
 
 body {
     font-family: "Calibri", "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 20px;
     text-align: center;
     overflow-y: scroll;
     overflow-x: hidden;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: .25em;
+}
+
+footer h2 {
+    color: #ee402f;
 }
 
 h2 {
@@ -21,27 +32,15 @@ h2 {
     font-size: 2em;
 }
 
-td {
-    width: 25%;
-    padding: 15px;
-    text-align: left;
-}
 
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    margin-bottom: 5px;
-}
-
-footer h2 {
-    color: #ee402f;
-}
+/*======================================================
+============CLASSES=====================================
+======================================================*/
 
 p.directions {
     color: #ee402f;
-    margin: 40px auto 0 auto;
-    font-size: 18px;
+    margin: 2em auto 0 auto;
+    font-size: .9em;
 }
 
 .layer {
@@ -51,13 +50,13 @@ p.directions {
 }
 
 .info-box {
-    line-height: 30px;
+    line-height: 1.5em;
     background-color: #ffffff;
     border-radius: 25px;
     font-weight: 600;
-    padding: 20px;
+    padding: 1em;
     display: block;
-    margin-top: 10px;
+    margin-top: .5em;
 }
 
 .container {
@@ -73,13 +72,20 @@ p.directions {
 }
 
 .icon {
-    margin-right: 10px;
+    margin-right: .5em;
 }
 
 .clearfix:after {
     content: "";
     display: block;
     clear: both;
+}
+
+.tool {
+    width: 235px;
+    padding: 15px;
+    text-align: left;
+    float: left;
 }
 
 .project {
@@ -92,8 +98,6 @@ p.directions {
     opacity: .8;
 }
 
-.project:nth-child(even) {}
-
 .thumbnail {
     width: 450px;
     border-radius: 25px;
@@ -101,12 +105,9 @@ p.directions {
     cursor: pointer;
 }
 
-.glyphicon-circle-arrow-down {
-    margin-right: 5px;
-}
-
 .social {
     width: 75px;
+    margin: 20px auto;
 }
 
 .social:hover {
@@ -126,12 +127,12 @@ p.directions {
 
 .tie-fighter-fly {
     position: relative;
-    animation: tie-fighter 1.5s cubic-bezier(0, 0, 0.47, 0.88) forwards;
+    animation: tie-fighter 1.5s linear forwards;
 }
 
 .x-wing-fly {
     position: relative;
-    animation: x-wing 1.5s cubic-bezier(0, 0, 0.47, 0.88) forwards;
+    animation: x-wing 1.5s linear forwards;
 }
 
 .ufo-fly {
@@ -142,6 +143,11 @@ p.directions {
 .rocket-blast {
     animation: rocket-blast 1s cubic-bezier(0.63, 0.03, 1, 1) forwards;
 }
+
+
+/*======================================================
+============IDs=========================================
+======================================================*/
 
 #l1 {
     background-color: #000000;
@@ -156,26 +162,55 @@ p.directions {
     height: 700%;
 }
 
+#basic-portfolio {
+    color: #ffffff;
+    font-size: .9em;
+    margin: 0;
+}
+
+#basic-redirect {
+    text-decoration: none;
+    color: #ee402f;
+}
+
+#welcome {
+    margin-top: 80px;
+}
+
 #name {
     font-size: 4em;
     color: #ee402f;
     font-family: 'Monoton', cursive;
 }
 
-#sign {
-    width: 40%;
+#arrow-container {
+    height: 250px;
     margin: 0 auto;
-    text-transform: uppercase;
+}
+
+#arrow-directions {
+    color: #ffffff;
+    font-size: .9em;
+    font-weight: 600;
+}
+
+#arrow {
+    font-size: 8em;
+    color: #f47835;
+    animation: arrow 2s ease-in-out .8s infinite;
+}
+
+#astronaut {
+    position: relative;
+    width: 300px;
+    margin-top: 250px;
+    margin-left: 600px;
 }
 
 #bio {
     margin: 620px auto 0 auto;
     max-width: 980px;
     visibility: hidden;
-}
-
-#welcome {
-    margin-top: 100px;
 }
 
 #bio-image {
@@ -188,30 +223,6 @@ p.directions {
 
 #bio-description {
     text-align: justify;
-}
-
-#arrow-container {
-    height: 250px;
-    margin: 0 auto;
-}
-
-#arrow-directions {
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-#arrow {
-    font-size: 150px;
-    color: #f47835;
-    animation: arrow 2s ease-in-out .8s infinite;
-}
-
-#astronaut {
-    position: relative;
-    width: 300px;
-    margin-top: 250px;
-    margin-left: 600px;
 }
 
 #rocket {
@@ -247,7 +258,7 @@ p.directions {
 #shooting-star {
     position: relative;
     visibility: hidden;
-    top: 5px;
+    top: 134px;
     animation: shooting-star .8s linear .8s forwards;
 }
 
@@ -260,32 +271,34 @@ p.directions {
     text-align: left;
 }
 
-#contact-2 {
-
-}
-
 #final-message {
-    margin: 50px auto 0 auto;
+    margin: 0 auto;
 }
 
 #restart {
     text-decoration: none;
     color: #ee402f;
-    margin: 50px auto 0 auto;
-    font-size: 18px;
+    margin: 2em auto 0 auto;
+    font-size: .9em;
 }
 
 #copyright {
     color: #ffffff;
-    font-size: 18px;
+    font-size: .9em;
 }
+
+
+/*======================================================
+============KEYFRAMES===================================
+======================================================*/
+
 @keyframes shooting-star {
     from {
-        right: 1400px;
+        right: 1100px;
         visibility: hidden;
     }
     to {
-        right: -1400px;
+        right: -1100px;
         visibility: visible;
     }
 }
@@ -334,12 +347,12 @@ p.directions {
 
 @keyframes ufo-fly {
     from {
-        right: -1400px;
+        right: -1100px;
         visibility: hidden;
         width: 50px
     }
     to {
-        right: 1400px;
+        right: 1100px;
         visibility: visible;
         width: 800px;
     }
@@ -347,12 +360,12 @@ p.directions {
 
 @keyframes tie-fighter {
     from {
-        left: -1400px;
+        left: -1100px;
         visibility: hidden;
         width: 30px
     }
     to {
-        left: 1400px;
+        left: 1100px;
         visibility: visible;
         width: 480px;
     }
@@ -360,13 +373,203 @@ p.directions {
 
 @keyframes x-wing {
     from {
-        left: -1400px;
+        left: -1100px;
         visibility: hidden;
         width: 50px
     }
     to {
-        left: 1400px;
+        left: 1100px;
         visibility: visible;
         width: 800px;
+    }
+}
+
+
+/*======================================================
+=============MEDIA=QUERIES==============================
+======================================================*/
+
+@media only screen and (min-width: 1366px) {
+    @keyframes shooting-star {
+        from {
+            right: 2000px;
+            visibility: hidden;
+        }
+        to {
+            right: -2000px;
+            visibility: visible;
+        }
+    }
+    @keyframes ufo-fly {
+        from {
+            right: -2000px;
+             visibility: hidden;
+        }
+        to {
+            right: 2000px;
+            visibility: visible;
+        }
+    }
+    @keyframes tie-fighter {
+        from {
+            left: -2000px;
+             visibility: hidden;
+        }
+        to {
+            left: 2000px;
+            visibility: visible;
+        }
+    }
+    @keyframes x-wing {
+        from {
+            left: -2000px;
+             visibility: hidden;
+        }
+        to {
+            left: 2000px;
+            visibility: visible;
+        }
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    #shooting-star {
+        top: 123px;
+    }
+    #name {
+        font-size: 3em;
+    }
+    #astronaut {
+        margin-top: 325px;
+        margin-left: 400px;
+    }
+    footer h2 {
+        font-size: 1.5em;
+    }
+    .project {
+        margin: 10px auto 10px auto;
+    }
+    .thumbnail {
+        width: 75%;
+    }
+    .info-box {
+        width: 96%;
+        margin: .5em 2% 0 2%;
+    }
+    #tool-display {
+        width: 705px;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    footer h2 {
+        font-size: 1.25em;
+    }
+    .layer {
+        height: 900%;
+    }
+    #shooting-star {
+        top: 123px;
+    }
+    #arrow {
+        font-size: 5em;
+    }
+    #l3 {
+        height: 1300%;
+    }
+    #bio-image {
+        float: none;
+    }
+    #tool-display {
+        width: 470px;
+    }
+    #astronaut {
+        margin-top: 150px;
+        margin-left: 750px;
+    }
+    @keyframes arrow {
+        from {
+            margin-top: 0;
+        }
+        to {
+            margin-top: 25px;
+        }
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    h2 {
+        font-size: 1.5em;
+    }
+    #shooting-star {
+        top: 107px;
+    }
+    #name {
+        font-size: 2.5em;
+    }
+                @keyframes shooting-star {
+        from {
+            right: 800px;
+            visibility: hidden;
+        }
+        to {
+            right: -800px;
+            visibility: visible;
+        }
+    }
+    @keyframes ufo-fly {
+        from {
+            right: -800px;
+             visibility: hidden;
+        }
+        to {
+            right: 800px;
+            visibility: visible;
+        }
+    }
+    @keyframes tie-fighter {
+        from {
+            left: -800px;
+             visibility: hidden;
+        }
+        to {
+            left: 800px;
+            visibility: visible;
+        }
+    }
+    @keyframes x-wing {
+        from {
+            left: -800px;
+             visibility: hidden;
+        }
+        to {
+            left: 800px;
+            visibility: visible;
+        }
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    footer h2 {
+        font-size: .75em;
+    }
+    #shooting-star {
+        top: 80px;
+    }
+    #welcome {
+        font-size: 1em;
+    }
+    #tool-display {
+        width: 235px;
+    }
+    #name {
+        font-size: 1.5em;
+    }
+    #arrow-directions {
+        font-size: .6em;
+    }
+    #basic-portfolio,
+    #copyright {
+        font-size: .6em;
     }
 }

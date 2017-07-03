@@ -283,7 +283,7 @@ p.directions {
 }
 
 #copyright {
-    color: #ffffff;
+    color: #ee402f;
     font-size: .9em;
 }
 
@@ -404,30 +404,37 @@ p.directions {
         from {
             right: -2000px;
              visibility: hidden;
+             width: 50px
         }
         to {
             right: 2000px;
             visibility: visible;
+            width: 800px;
         }
     }
     @keyframes tie-fighter {
         from {
             left: -2000px;
              visibility: hidden;
+             width: 30px
         }
         to {
             left: 2000px;
             visibility: visible;
+            width: 480px;
         }
     }
     @keyframes x-wing {
         from {
             left: -2000px;
              visibility: hidden;
+             width: 50px
         }
         to {
             left: 2000px;
             visibility: visible;
+            width: 800px;
+
         }
     }
 }
@@ -521,30 +528,36 @@ p.directions {
         from {
             right: -800px;
              visibility: hidden;
+             width: 50px;
         }
         to {
             right: 800px;
             visibility: visible;
+            width: 800px;
         }
     }
     @keyframes tie-fighter {
         from {
             left: -800px;
              visibility: hidden;
+             width: 30px;
         }
         to {
             left: 800px;
             visibility: visible;
+            width: 480px;
         }
     }
     @keyframes x-wing {
         from {
             left: -800px;
              visibility: hidden;
+             width: 50px;
         }
         to {
             left: 800px;
             visibility: visible;
+            width: 800px;
         }
     }
 }

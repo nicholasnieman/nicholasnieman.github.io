@@ -41,6 +41,7 @@ p.directions {
     color: #ee402f;
     margin: 2em auto 0 auto;
     font-size: .9em;
+    width: 100%;
 }
 
 .layer {

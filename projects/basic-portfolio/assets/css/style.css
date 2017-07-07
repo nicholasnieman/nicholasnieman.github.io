@@ -1,0 +1,327 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Calibri", "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    color: #777;
+    background: url("../images/nice_snow.png");
+    line-height: 32px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    border-bottom: 2px solid #ccc;
+    overflow: auto;
+    z-index: 99;
+    background-color: #ffffff;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Georgia", Times, Times New Roman, serif;
+    font-weight: 700;
+    color: #0077b5;
+}
+
+h2,
+h3 {
+    font-size: 22px;
+}
+
+h1 {
+    font-size: 30px;
+    border-bottom: 3px solid #ddd;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 15px;
+}
+
+nav {
+    float: right;
+    margin-top: 25px;
+}
+
+nav a {
+    display: inline-block;
+    color: #999;
+    border-left: 2px solid #ddd;
+    margin-left: 15px;
+    padding-left: 15px;
+}
+
+nav a:first-child {
+    border-left: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+nav a:hover {
+    color: #000000;
+}
+
+li {
+    font-size: 15px;
+    text-align: left;
+    line-height: 25px;
+}
+
+li:first-child {
+    margin-top: 5px;
+}
+
+footer {
+    width: 100%;
+    height: 90px;
+    background-color: #666666;
+    text-align: center;
+    color: #ccc;
+    font-size: 12px;
+    border-top: 8px solid #0077b5;
+    padding: 30px 0px;
+    margin-top: -90px;
+}
+
+/*======================================================
+============CLASSES=====================================
+======================================================*/
+
+.social {
+    width: 75px;
+    margin-top: 25px;
+}
+
+.social:hover {
+    opacity: .8;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container {
+    clear: both;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.example {
+    width: 280px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.example:nth-child(even) {
+    margin-left: 28px;
+}
+
+.example:last-child {
+    margin-bottom: 0;
+}
+
+.example:hover {
+    opacity: .8;
+}
+
+.example img {
+    width: 100%;
+}
+
+.example h3 {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: #0077b5;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.tool {
+    float: left;
+    width: 195px;
+    padding: 12px;
+    text-align: left;
+}
+
+/*======================================================
+============IDs=========================================
+======================================================*/
+
+#logo {
+    width: 340px;
+    height: 90px;
+    float: left;
+    background-color: #0077b5;
+    color: #fff;
+    text-align: center;
+    font-family: "Georgia", Times, Times New Roman, serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 90px;
+}
+
+#logo:hover {
+    opacity: .8;
+}
+
+#main-container {
+    overflow: auto;
+    padding: 130px 0px 40px 0px;
+    min-height: 100%;
+}
+
+#main-section,
+#sidebar {
+    border: 1px solid #ddd;
+    padding: 30px;
+    background-color: #ffffff;
+}
+
+#main-section {
+    width: 650px;
+    float: left;
+}
+
+#sidebar {
+    width: 270px;
+    float: right;
+    text-align: center;
+}
+
+#main-container:after {
+    height: 90px;
+}
+
+#bio-image {
+    float: left;
+    margin: 30px 30px 0px 0px;
+    width: 274px;
+}
+
+#bio-description {
+    margin-top: 30px;
+}
+
+#portfolio {
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#tool-display {
+    margin: 15px auto 0 auto;
+}
+
+/*======================================================
+=============MEDIA=QUERIES==============================
+======================================================*/
+
+@media only screen and (max-width: 980px) {
+    html,
+    body {
+        text-align: center;
+    }
+    body {
+        background: #ffffff;
+    }
+    header {
+        border-bottom: none;
+        position: static;
+    }
+    nav {
+        width: 100%;
+    }
+    h1 {
+        border-bottom: none;
+        text-align: center;
+        padding-bottom: 0;
+    }
+    h2 {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    p {
+        text-align: justify;
+    }
+    .container {
+        width: 100%;
+    }
+    #logo {
+        width: 100%;
+        border-bottom: 2px solid #ccc;
+    }
+    #main-container {
+        padding: 0;
+    }
+    #main-section,
+    #sidebar {
+        border: none;
+        float: none;
+        margin: 0 auto;
+    }
+    #sidebar {
+        clear: both;
+        padding-top: 0px;
+    }
+    #bio-image {
+        float: none;
+        margin-right: 0;
+    }
+    #bio-description {
+        margin-top: 1em;
+    }
+    #tool-display {
+        width: 585px;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    h1,
+    #logo {
+        font-size: 26px;
+    }
+    .example {
+        width: 80%;
+        margin: 30px auto 0 auto;
+    }
+    .example:nth-child(even) {
+        margin-left: auto;
+    }
+    #main-section {
+        width: 100%;
+        text-align: center;
+    }
+    #bio-image {
+        width: 250px;
+    }
+    #portfolio {
+        display: inline-block;
+        flex-wrap: nowrap;
+    }
+}
+
+@media only screen and (max-width: 585px) {
+    #tool-display {
+        width: 100%;
+    }
+}

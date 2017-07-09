@@ -39,9 +39,7 @@ a {
 
 h3 {
     font-weight: 600;
-    color: #000000;
     font-family: "Calibri", "Helvetica Neue", Helvetica, sans-serif;
-
 }
 
 /*======================================================
@@ -135,12 +133,12 @@ h3 {
 
 .tie-fighter-fly {
     position: relative;
-    animation: tie-fighter 1.5s linear forwards;
+    animation: tie-fighter 2s linear forwards;
 }
 
 .x-wing-fly {
     position: relative;
-    animation: x-wing 1.5s linear forwards;
+    animation: x-wing 2s linear forwards;
 }
 
 .ufo-fly {

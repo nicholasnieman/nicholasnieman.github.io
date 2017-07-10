@@ -143,7 +143,7 @@ h3 {
 
 .ufo-fly {
     position: relative;
-    animation: ufo-fly 2s cubic-bezier(0, 1.54, 1, -0.18) forwards;
+    animation: ufo-fly 2.5s cubic-bezier(0, 1.54, 1, -0.18) forwards;
 }
 
 .rocket-blast {

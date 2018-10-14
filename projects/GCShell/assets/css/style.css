@@ -177,7 +177,9 @@ blockquote {
 	margin: 20px 0 20px;
 	padding: 30px;
 }
-
+.wraper {
+	overflow: hidden;
+}
 /*-------------------- Preloader area -------------------------------------------------*/
 
 #preloader {

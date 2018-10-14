@@ -180,6 +180,9 @@ blockquote {
 .wraper {
 	overflow: hidden;
 }
+.wrapper {
+	overflow: hidden;
+}
 /*-------------------- Preloader area -------------------------------------------------*/
 
 #preloader {

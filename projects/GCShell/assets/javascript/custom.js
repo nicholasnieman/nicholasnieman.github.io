@@ -169,7 +169,7 @@
             nav: false,
             autoplay: true,
             autoplaySpeed: 1000,
-            autoplayTimeout: 4000,
+            autoplayTimeout: 3500,
             autoplayHoverPause: true
         });
 		

@@ -433,7 +433,7 @@ blockquote {
 }
 #mainNav .navbar-nav .nav-item .nav-link {
     font-weight: 500;
-    padding: 30px 10px;
+    padding: 33px 10px;
     color: 	#B62000;
     font-size: 15px;
     margin: 0 5px;
@@ -637,7 +637,7 @@ blockquote {
     z-index: 9;
     top: 0;
     width: 315px;
-    padding: 30px 10px;
+    padding: 33px 10px 0 10px;
     margin: 0 5px;
     text-align: center;
 }

@@ -604,7 +604,6 @@
 		z-index: 1000;
 	}
 	#mainNav .navbar-collapse.show {
-		overflow-y:auto;
 		max-height: 400px;
 	}
 	#mainNav .navbar-header {

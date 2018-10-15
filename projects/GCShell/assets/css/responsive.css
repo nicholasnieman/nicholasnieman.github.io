@@ -5,7 +5,7 @@
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
 	.main-header-top .logo{
 		width: 25%;
-		top: 15px;
+		top: 5px;
 	}
 	.project-slider.owl-carousel .owl-nav .owl-prev{
 		left: 0px;
@@ -45,7 +45,7 @@
 		font-size: 12px;
 	}
 	.top-main-header .fixed-menu{
-		min-height: 75px;
+		min-height: 110px;
 	}
 	.pricing-wrapper{
 		padding: 0 10px;
@@ -84,13 +84,13 @@
 		width: 100%;
 	}
 	.main-header-top{
-		min-height: 105px;
+		min-height: 110px;
 	}
 	.navbar-dark .navbar-toggler{
 		background: #B62000;
 	}
 	.top-main-header .fixed-menu.main-header-top{
-		min-height: 60px;
+		min-height: 110px;
 	}
 	#mainNav .navbar-nav .nav-item .nav-link {
 		margin: 0px;
@@ -98,7 +98,7 @@
 	}
 	.main-header-top .logo{
 		width: 35%;
-		top: 12px;
+		top: 5px;
 	}
 	#homepage-overlay h1{
 		font-size: 55px;
@@ -208,10 +208,10 @@
 		margin: 12px 0 12px 0;
 	}
 	.main-header-top{
-		min-height: 105px;
+		min-height: 110px;
 	}
 	.top-main-header .fixed-menu.main-header-top{
-		min-height: 84px;
+		min-height: 110px;
 	}
 	#mainNav .navbar-nav .nav-item .nav-link {
 		margin: 0px;
@@ -221,7 +221,7 @@
 		width: 55%;
 	}
 	.top-main-header .fixed-menu .logo{
-		top: 14px;
+		top: 5px;
 	}
 	#homepage-overlay h1 {
 		font-size: 40px;
@@ -389,17 +389,17 @@
 		width: 100%;
 	}
 	.main-header-top{
-		min-height: 105px;
+		min-height: 110px;
 	}
 	.navbar-dark .navbar-toggler{
 		background: #B62000;
 	}
 	.main-header-top .logo{
 		width: 70%;
-		top: 10px;
+		top: 5px;
 	}
 	.top-main-header .fixed-menu.main-header-top{
-		min-height: 84px;
+		min-height: 110px;
 	}
 	#mainNav .navbar-nav .nav-item .nav-link{
 		margin: 0px;
@@ -577,7 +577,7 @@
 		width: 75%;
 	}
 	.top-main-header .fixed-menu .logo{
-		top: 14px;
+		top: 5px;
 	}
 
 }
@@ -600,8 +600,8 @@
 		padding: 0;
 		clear: both;
 		position: absolute;
-		top: 100%;
-		z-index: 2;
+		top: 110px;
+		z-index: 1000;
 	}
 	#mainNav .navbar-collapse.show {
 		overflow-y:auto;

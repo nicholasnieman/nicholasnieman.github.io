@@ -396,17 +396,17 @@ blockquote {
 }
 .logo{}
 .logo img {
-    max-width: 225px;
+    max-width: 100px;
 }
 .main-header-top {
     padding: 0;
-    min-height: auto;
+    min-height: 110px;
 }
 .main-header-top .logo {
     position: absolute;
-    top: 25px;
     left: 0;
     z-index: 9;
+    top: 5px;
 }
 .head-top{
 	position: relative;
@@ -543,18 +543,18 @@ blockquote {
 	visibility: hidden;
 	left: 0px;
 	top: 0px;
-	min-height: auto;
+	min-height: 110px;
 	width: 100%;
 	padding: 0px 0px;
 	background: #ffffff;
 	z-index: 0;
 	-webkit-box-shadow: 0px 13px 15px -12px rgba(35,35,35,0.15);
 	box-shadow: 0px 13px 15px -12px rgba(35,35,35,0.15);
-	transition: all 500ms ease;
-	-moz-transition: all 500ms ease;
-	-webkit-transition: all 500ms ease;
-	-ms-transition: all 500ms ease;
-	-o-transition: all 500ms ease;
+	transition: all 750ms ease;
+	-moz-transition: all 750ms ease;
+	-webkit-transition: all 750ms ease;
+	-ms-transition: all 750ms ease;
+	-o-transition: all 750ms ease;
 	z-index: 999;
 	opacity: 1;
 	visibility: visible;
@@ -563,11 +563,11 @@ blockquote {
 	-op-animation-name: fadeInDown;
 	-webkit-animation-name: fadeInDown;
 	animation-name: fadeInDown;
-	-ms-animation-duration: 500ms;
-	-moz-animation-duration: 500ms;
-	-op-animation-duration: 500ms;
-	-webkit-animation-duration: 500ms;
-	animation-duration: 500ms;
+	-ms-animation-duration: 750ms;
+	-moz-animation-duration: 750ms;
+	-op-animation-duration: 750ms;
+	-webkit-animation-duration: 750ms;
+	animation-duration: 750ms;
 	-ms-animation-timing-function: linear;
 	-moz-animation-timing-function: linear;
 	-op-animation-timing-function: linear;
@@ -582,7 +582,7 @@ blockquote {
 .fixed-menu .head-top{
 }
 .fixed-menu .logo {
-    top: 27px;
+    top: 5px;
 }
 .search-icon span {
   
@@ -778,7 +778,7 @@ blockquote {
     width: 150px;
     margin: 0 auto;
     height: 55px;
-    background-image: url('../images/icon-heading.png');
+    background-image: url('../images/icon-heading2.png');
     background-repeat: no-repeat;
     background-position: bottom;
 
@@ -994,7 +994,7 @@ blockquote {
 }
 .project-boxes .title-section h2::before,
 .why-choose-us-box .title-section h2::before {
-    background: url('../images/icon-heading.png');
+    background: url('../images/icon-heading2.png');
     background-repeat: repeat;
     background-repeat: no-repeat;
     bottom: -45px;

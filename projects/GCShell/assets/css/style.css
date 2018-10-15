@@ -883,7 +883,7 @@ blockquote {
 	overflow: hidden;
 	position: relative;
 }
-/*.about-choose-thumb .overlay::before, .about-choose-thumb .overlay::after {
+.about-choose-thumb .overlay::before, .about-choose-thumb .overlay::after {
     position: absolute;
     content: "";
     height: 30%;
@@ -892,7 +892,7 @@ blockquote {
     opacity: 0;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-}*/
+}
 .about-choose-inner:hover .about-choose-thumb .overlay::before{
 	height: 50%;
 	width: 100%;

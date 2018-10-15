@@ -65,7 +65,7 @@
 /*-------------------- Skeleton -------------------------------------------------*/
     
 body {
-	color: #666666;
+	color: #1f1f1f;
 	font-size: 14px;
 	font-family: 'Poppins', sans-serif;
 	line-height: 1.80857;
@@ -449,7 +449,7 @@ blockquote {
     padding: 6px 12px;
     font-size: 22px;
     color: #fff;
-    margin: 37px 0;
+    margin: 37px 0 8px 0;
 }
 #mainNav, #navbarNav, .navbar-nav {
     width: 100%;
@@ -705,21 +705,21 @@ blockquote {
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-#parallax.homepage-parallax a{}
-#parallax.homepage-parallax a.button-one-a{
+.homepage-parallax a{}
+.homepage-parallax a.button-one-a{
 	background: #FFD414;
 	border-color: #FFD414;
 }
-#parallax.homepage-parallax ul li a:hover::before {
+.homepage-parallax ul li a:hover::before {
     visibility: visible;
     transition: all 0.4s ease 0s;
     margin-left: 0px;
     opacity: 1;
 }
-#parallax.homepage-parallax ul li{
+.homepage-parallax ul li{
 	display: inline-block;
 }
-#parallax.homepage-parallax a.button-one-a::before {
+.homepage-parallax a.button-one-a::before {
     content: "\e876";
     font-family: Linearicons-Free;
     float: right;
@@ -734,12 +734,12 @@ blockquote {
 	font-size: 22px;
 	font-weight: bold;
 }
-#parallax.homepage-parallax a.button-two-b{
+.homepage-parallax a.button-two-b{
 	background: 	#B62000;
 	border-color: 	#B62000;
 	color: #ffffff;
 }
-#parallax.homepage-parallax a.button-two-b::before {
+.homepage-parallax a.button-two-b::before {
     content: "\e876";
     font-family: Linearicons-Free;
     float: right;
@@ -761,6 +761,7 @@ blockquote {
 	position: relative;
 	display: block;
 	height: 645px;
+	overflow: hidden;
 }
 /*-------------------- About Us area -------------------------------------------------*/
 

@@ -915,9 +915,14 @@ blockquote {
     right: 0;
     z-index: 1;
 }
+#about-paragraph {
+	margin-top: -20px;
+}
 
 /*-------------------- Services area -------------------------------------------------*/
-
+#service-text {
+	text-align: justify;
+}
 .service-text {
 	position: absolute;
     width: 100%;

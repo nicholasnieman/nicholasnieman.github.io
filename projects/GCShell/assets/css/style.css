@@ -332,6 +332,10 @@ blockquote {
 
 /*-------------------- Header area -------------------------------------------------*/
 
+#header {
+	width: 100%;
+	z-index: 1000;
+}
 .wraper{}
 .top-main-header{
 	background: #f9f9f9;
@@ -757,7 +761,6 @@ blockquote {
 }
 .homepage-parallax{
 	background: url("../images/homepage2.jpg") bottom center no-repeat;
-	background-attachment: fixed;
 	background-size: cover;
 	position: relative;
 	display: block;

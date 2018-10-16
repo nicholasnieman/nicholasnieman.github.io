@@ -105,10 +105,22 @@
 		-----------------------------------------------------------------------*/
 		
 		$(window).on('scroll', function () {
-			if ($(window).scrollTop() > 50) {
-				$('.main-header-top').addClass('fixed-menu');
+			var offset 	= window.pageYOffset;
+			var header = document.getElementById("header");
+			var spacer = document.getElementById("spacer");
+			var menu = document.getElementById("menu");
+			var rem = window.document.documentElement.style.fontSize;
+			var rem = rem.replace("px", "");
+			var trigger = header.offsetHeight - menu.offsetHeight;
+			var spacerHeight = header.offsetHeight;
+			if (offset >= trigger) {
+				header.style.position = "fixed";
+				header.style.marginTop = "-" + trigger + "px";
+				spacer.style.height = spacerHeight + "px";
 			} else {
-				$('.main-header-top').removeClass('fixed-menu');
+				header.style.position = "inherit";
+				header.style.marginTop = "0";
+				spacer.style.height = "0";
 			}
 		});
 		

@@ -394,6 +394,9 @@ blockquote {
     font-size: 12px;
     color: #ffffff;
 }
+.info-right a:hover i{
+	color: #FFD414;
+}
 .info-right li i {
     padding-right: 5px;
     color: #fff;
@@ -1470,7 +1473,7 @@ blockquote {
 .address-main {
     margin-bottom: 45px;
 }
-.address-box {
+.contact-box {
     padding: 10px 0;
     margin-bottom: 30px;
 }
@@ -1480,7 +1483,7 @@ blockquote {
 	display: inline-block;
 	padding: 0px 5px;
 }
-.address-box .add-icon {
+.contact-box .add-icon {
     background: #B62000;
     height: 75px;
     line-height: 75px;
@@ -1495,7 +1498,7 @@ blockquote {
 .add-icon img{
 	width: 100%;
 }
-.address-box .add-icon img {
+.contact-box .add-icon img {
     max-width: 40px;
 }
 .add-content{

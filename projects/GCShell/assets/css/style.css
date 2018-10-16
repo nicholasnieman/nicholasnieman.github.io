@@ -763,7 +763,7 @@ blockquote {
 	font-weight: bold;
 }
 .homepage-parallax{
-	background: url("../images/homepage2.jpg") bottom center no-repeat;
+	background: url("../images/homepage2.jpg") top center no-repeat;
 	background-size: cover;
 	position: relative;
 	display: block;

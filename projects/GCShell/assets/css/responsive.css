@@ -603,9 +603,6 @@
 		top: 110px;
 		z-index: 1000;
 	}
-	#mainNav .navbar-collapse.show {
-		max-height: 400px;
-	}
 	#mainNav .navbar-header {
 		float: none;
 	}

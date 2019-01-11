@@ -1136,6 +1136,9 @@ blockquote {
 .project-slider.owl-carousel .owl-nav span:hover{
 	color: #ffffff;
 }
+#areas {
+	background-color: #f8f8f8;
+}
 
 /*-------------------- Testimonial area -------------------------------------------------*/
 
@@ -2047,7 +2050,7 @@ blockquote {
 /*-------------------- Certification area -------------------------------------------------*/
 
 .head-sub-main{
-	background: url("../images/1600x573.png") bottom center no-repeat;
+	background: url("../images/parallax-image2.jpg") bottom center no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	position: relative;
@@ -2703,7 +2706,9 @@ svg{
     -webkit-transform: translateY(0);
     transform: translateY(0);
 }
-
+#leadership {
+	background-color: #f8f8f8;
+}
 /*-------------------- About Us area -------------------------------------------------*/
 
 .about-top{}

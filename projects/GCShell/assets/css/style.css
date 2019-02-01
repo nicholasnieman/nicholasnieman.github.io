@@ -1,55 +1,4 @@
-/*---------------------------------------------------------------------
-[Table of contents]
-	1. Import Fonts
-	2. Import Files
-	3. Skeleton
-	  1.1. Preloader area
-	  1.2. Scroll to top area
-	4. Header area
-	5. Banner Slider area
-	6. About Us area
-	7. Services area
-	8. Projects area
-	9. Testimonial area
-	10. Call Now area
-	11. Our Partner area
-	12. Footer and Copyright area
-	13. Home Page 2 area
-	14. Home Page 3 area
-	
-	------- All Pages CSS Code -------
-	
-	15. Certification area
-	16. Core Values area
-	17. Partner area
-	18. Pricing area
-	19. Career area
-	20. Faq area
-	21. 404 area
-	22. Our Leaders area
-	23. About Us area
-	24. History area
-	25. Service area
-	26. Our Works area
-	27. News area
-	28. Contact Us area 
-	29. landing page area 
-		
----------------------------------------------------------------------*/
-
-/*---------------------------------------------------------------------
-    Import Fonts
----------------------------------------------------------------------*/
-
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900');
-
-/*== 1) font-family: 'Poppins', sans-serif; , 2)   , 3)  ==*/
-
-
-/*---------------------------------------------------------------------
-    Import Files
----------------------------------------------------------------------*/
-
 @import url(animate.min.css);
 @import url(normalize.css);
 @import url(simple-line-icons.css);
@@ -61,9 +10,7 @@
 @import url(colorbox.css);
 @import url(flaticon.css);
 @import url(font-awesome.min.css);
-
-/*-------------------- Skeleton -------------------------------------------------*/
-    
+   
 body {
 	color: #1f1f1f;
 	font-size: 14px;
@@ -184,7 +131,6 @@ blockquote {
 .wrapper {
 	overflow: hidden;
 }
-/*-------------------- Preloader area -------------------------------------------------*/
 
 #preloader {
 	position: fixed;
@@ -329,8 +275,6 @@ blockquote {
 #scroll-to-top.show {
 	opacity: 1;
 }
-
-/*-------------------- Header area -------------------------------------------------*/
 
 #header {
 	width: 100%;
@@ -637,7 +581,6 @@ blockquote {
     font-size: 22px;
 }
 
-/*-------------------- Banner Slider area -------------------------------------------------*/
 #header-text {
 	position: absolute;
     left: 100px;
@@ -770,8 +713,6 @@ blockquote {
 	height: 645px;
 	overflow: hidden;
 }
-/*-------------------- About Us area -------------------------------------------------*/
-
 .paragraph-bg{
 	background: #fff;
 	clear: both;
@@ -924,8 +865,6 @@ blockquote {
 #about-paragraph {
 	margin-top: -20px;
 }
-
-/*-------------------- Services area -------------------------------------------------*/
 #service-text {
 	text-align: justify;
 }
@@ -1139,9 +1078,6 @@ blockquote {
 #areas {
 	background-color: #f8f8f8;
 }
-
-/*-------------------- Testimonial area -------------------------------------------------*/
-
 .testimonial-slider{}
 .testimonial-single{
 	margin: 0px 19%;
@@ -1184,9 +1120,6 @@ blockquote {
 .client-name h4{
 	padding: 15px 0px 0 0;
 }
-
-/*-------------------- Call Now area -------------------------------------------------*/
-
 .call-now-box{
 	background: url("../images/1920x1100.png") bottom center no-repeat;
 	background-attachment: fixed;
@@ -1278,9 +1211,6 @@ blockquote {
 .client-item img:hover{
 	opacity: 0.6;
 }
-
-/*-------------------- Footer area -------------------------------------------------*/
-
 .footer-main{
 	background: #f8f8f8;
 	padding-top: 90px;
@@ -1564,9 +1494,6 @@ blockquote {
 .copyright .nav-copyrights li a:hover{
 	color: #FFD414;
 }
-
-/*-------------------- Home Page 2 area -------------------------------------------------*/
-
 .pages-2{}
 .pages-2 .top-header{
 	background: none;
@@ -1896,10 +1823,6 @@ blockquote {
 .hover-effect:hover .hover-text {
     opacity: 1;
 }
-
-
-/*-------------------- Home Page 3 area -------------------------------------------------*/
-
 .pages-3{}
 .pages-3 .top-header{
 	background: none;
@@ -2009,13 +1932,6 @@ blockquote {
 	padding: 15px;
 	color: 	#B62000;
 }
-
-
-
-/**----------------------------------- All Pages CSS Code ---------------**/
-
-/* Certification area */
-
 .margin-top-5{ margin-top: 5px }
 .margin-top-10{ margin-top: 10px }
 .margin-top-15{ margin-top: 15px }
@@ -2046,9 +1962,6 @@ blockquote {
 .title-section h2 + p {
     display: none;
 }	
-
-/*-------------------- Certification area -------------------------------------------------*/
-
 .head-sub-main{
 	background: url("../images/parallax-image2.jpg") bottom center no-repeat;
 	background-attachment: fixed;
@@ -2174,9 +2087,6 @@ blockquote {
     margin-left: 0px;
     opacity: 1;
 }
-
-/*-------------------- Core Values area -------------------------------------------------*/
-
 .title-section-inner {
     margin-bottom: 50px;
     position: relative;
@@ -2262,9 +2172,6 @@ blockquote {
     position: relative;
     top: 0;
 }
-
-/*-------------------- Partner area -------------------------------------------------*/
-
 .partner-box{}
 .partner-box h4{
 	font-size: 22px;
@@ -2292,9 +2199,6 @@ blockquote {
     max-height: 100%;
     display: inline-block;
 }
-
-/*-------------------- Pricing area -------------------------------------------------*/
-
 .inner-title-box{
 	width: 100%;
 	padding: 0px 15px;
@@ -2410,9 +2314,6 @@ blockquote {
     margin-bottom: 20px;
     margin-top: 20px;
 }
-
-/*-------------------- Career area -------------------------------------------------*/
-
 .form-wrapper h4{
 	font-size: 22px;
 	color: #222222;
@@ -2500,9 +2401,6 @@ svg{
 	font-weight: 300;
 	margin-bottom: 20px;
 }
-
-/*-------------------- Faq area -------------------------------------------------*/
-
 .accordion-item {
     margin-bottom: 20px;
 }
@@ -2541,9 +2439,6 @@ svg{
 .accordion-item-body p{
 	font-weight: 300;
 }
-
-/*-------------------- 404 area -------------------------------------------------*/
-
 .page-not-found{
 	position: relative;
 	text-align: center;
@@ -2601,9 +2496,6 @@ svg{
     margin-left: 0px;
     opacity: 1;
 }
-
-/*-------------------- Our Leaders area -------------------------------------------------*/
-
 .leaders-main{
 	width: 100%;
 	padding: 0px 15px;
@@ -2652,6 +2544,9 @@ svg{
     width: 100%;
     opacity: 0;
 	transition: all .4s ease-in-out;
+}
+.team-bio {
+	padding: 20px;
 }
 .team-content {
     position: absolute;
@@ -2709,8 +2604,6 @@ svg{
 #leadership {
 	background-color: #f8f8f8;
 }
-/*-------------------- About Us area -------------------------------------------------*/
-
 .about-top{}
 .about-top a{
 	line-height: 22px;
@@ -2761,9 +2654,6 @@ svg{
 	line-height: 30px;
 	color: #767676;
 }
-
-/*-------------------- History area -------------------------------------------------*/
-
 .min-history{}
 .min-history .nav-tabs {
     border-bottom: 1px solid #f0f0f0;
@@ -2808,9 +2698,6 @@ svg{
 	font-weight: 300;
 	padding-bottom: 20px;
 }
-
-/*-------------------- Service area -------------------------------------------------*/
-
 .service-box-inner{
 	width: 100%;
 	padding: 0px 15px;
@@ -2823,9 +2710,6 @@ svg{
 .service-box-inner p{
 	font-weight: 300;
 }
-
-/*-------------------- Our Works area -------------------------------------------------*/
-
 .our-work-box{}
 .our-work-box .project-menu span{
 	color: 	#B62000;
@@ -2842,9 +2726,6 @@ svg{
 .our-work-box.nospace .hover-effect{
 	margin-bottom: 0px;
 }
-
-/*-------------------- News area -------------------------------------------------*/
-
 .post{
 	padding: 0 0 35px;
 	margin: 0 0 45px;
@@ -3071,9 +2952,6 @@ svg{
 	background: 	#B62000;
 	color: #ffffff;
 }
-
-/*-------------------- Contact Us area -------------------------------------------------*/
-
 .si-float-wrapper {
 	position: absolute;
 	width: 100%; 
@@ -3486,9 +3364,6 @@ svg{
     margin-left: 0px;
     opacity: 1;
 }
-
-/*-------------------- landing page area  -------------------------------------------------*/
-
 .landing-main{
 	padding: 200px 0;
 	background: #111111;

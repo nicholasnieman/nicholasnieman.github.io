@@ -263,7 +263,7 @@ h3 {
 #shooting-star {
     position: relative;
     visibility: hidden;
-    top: 134px;
+    top: 115px;
     animation: shooting-star .8s linear .8s forwards;
 }
 
